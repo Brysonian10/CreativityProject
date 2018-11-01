@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ArtViewController.swift
 //  CreativityProject
 //
 //  Created by Spaulding, Bryson on 11/1/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ArtViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

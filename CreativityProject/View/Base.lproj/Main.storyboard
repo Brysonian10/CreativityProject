@@ -26,8 +26,8 @@
                                     <segue destination="fkb-2E-LOX" kind="show" id="eVo-Q4-I1x"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yVn-db-w5x">
-                                <rect key="frame" x="67" y="69" width="240" height="392"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yVn-db-w5x" customClass="DrawingView" customModule="CreativityProject" customModuleProvider="target">
+                                <rect key="frame" x="23" y="36" width="328" height="425"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>

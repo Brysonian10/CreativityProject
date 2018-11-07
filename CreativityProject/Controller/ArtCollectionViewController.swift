@@ -24,6 +24,38 @@ public class ArtCollectionViewController: UICollectionViewController
 
         // Do any additional setup after loading the view.
     }
+    
+    //MARK: Data members for Creativity Screen
+    
+    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    private let itemsPerRowCompact : CGFloat = 4
+    private let itemsPerRowNormal : CGFloat = 6
+    
+    private let creativeCS : [UIImage?] =
+    {
+        return [
+            UIImage(named: "BrysonSpaulding"),
+            UIImage(named: "BrysonSpauldingJavaHaiku"),
+            UIImage(named: "BrysonSpauldingSwiftHaiku"),
+            UIImage(named: "ElectricGuitarArt"),
+            UIImage(named: "Exorcist-Hennessey Camaro"),
+            UIImage(named: "Iphone-drawing screenshot"),
+            UIImage(named: "llama")
+        ]
+    }()
+    
+    private let labels : [String] =
+    {
+        return [
+            "My OctoCat",
+            "My Java Haiku",
+            "My Swift Haiku",
+            "Super Sick Guitar Art",
+            "My Favorite Car",
+            "My drawing on this app",
+            "My spirit animal"
+        ]
+    }()
 
     /*
     // MARK: - Navigation

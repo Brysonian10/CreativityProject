@@ -40,7 +40,8 @@ public class ArtCollectionViewController: UICollectionViewController
             UIImage(named: "ElectricGuitarArt"),
             UIImage(named: "Exorcist-Hennessey Camaro"),
             UIImage(named: "Iphone-drawing screenshot"),
-            UIImage(named: "llama")
+            UIImage(named: "llama"),
+            UIImage(named: "kermitMeme")
         ]
     }()
     
@@ -53,11 +54,13 @@ public class ArtCollectionViewController: UICollectionViewController
             "Super Sick Guitar Art",
             "My Favorite Car",
             "My drawing on this app",
-            "My spirit animal"
+            "My spirit animal",
+            "Dank Meme"
         ]
     }()
 
     //MARK: - Lifecycle
+
     
     
     /*
@@ -75,23 +78,26 @@ public class ArtCollectionViewController: UICollectionViewController
     public override func numberOfSections(in collectionView: UICollectionView) -> Int
     {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return creativeCS.count
     }
 
    public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
    {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
         // Configure the cell
+    artCell.backgroundColor = .green
+    artCell.artImage.image = creativeCS[indexPath.row]
+    artCell.artLabel.text = labels[indexPath.row]
     
-        return cell
+        return artCell
     }
 
     // MARK: UICollectionViewDelegate

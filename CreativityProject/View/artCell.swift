@@ -8,7 +8,9 @@
 
 import UIKit
 
-public class ArtCell: UICollectionViewCell
+public class artCell: UICollectionViewCell
 {
+    
+    
     
 }

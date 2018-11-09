@@ -63,14 +63,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z9-8c-w03">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z9-8c-w03" userLabel="Art Label">
                                             <rect key="frame" x="79" y="209" width="42" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a52-mV-qLo">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a52-mV-qLo" userLabel="Art Image">
                                             <rect key="frame" x="0.0" y="-8" width="200" height="200"/>
                                         </imageView>
                                     </subviews>
@@ -79,6 +79,10 @@
                                 <constraints>
                                     <constraint firstItem="a52-mV-qLo" firstAttribute="width" secondItem="Ve2-fR-tLm" secondAttribute="width" id="6rD-8E-Zww"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="artImage" destination="a52-mV-qLo" id="u9u-9F-Ap6"/>
+                                    <outlet property="artLabel" destination="3z9-8c-w03" id="xPu-Eg-cX3"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

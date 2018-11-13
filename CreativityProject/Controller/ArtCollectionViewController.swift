@@ -13,18 +13,7 @@ private let reuseIdentifier = "artidentifier"
 public class ArtCollectionViewController: UICollectionViewController
 {
 
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
-    }
-    
+   
     //MARK: Data members for Creativity Screen
     
     private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
@@ -60,7 +49,19 @@ public class ArtCollectionViewController: UICollectionViewController
     }()
 
     //MARK: - Lifecycle
-
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+        
+        // Register cell classes
+        //   self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        // Do any additional setup after loading the view.
+    }
+    
     
     
     /*

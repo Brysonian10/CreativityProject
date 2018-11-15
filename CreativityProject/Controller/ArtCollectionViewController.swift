@@ -30,7 +30,8 @@ public class ArtCollectionViewController: UICollectionViewController
             UIImage(named: "Exorcist-Hennessey Camaro"),
             UIImage(named: "Iphone-drawing screenshot"),
             UIImage(named: "llama"),
-            UIImage(named: "kermitMeme")
+            UIImage(named: "kermitMeme"),
+            UIImage(named: "MTM haiku")
         ]
     }()
     
@@ -44,7 +45,8 @@ public class ArtCollectionViewController: UICollectionViewController
             "My Favorite Car",
             "My drawing on this app",
             "My spirit animal",
-            "Dank Meme"
+            "Dank Meme",
+            "My MTM haiku"
         ]
     }()
 
